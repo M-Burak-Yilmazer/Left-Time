@@ -21,7 +21,7 @@ if (
 
     document.querySelector(
       ".countdown-item"
-    ).innerHTML = `<h1 style="color:red;">Time Left to: <span class="span" style="font-size:3rem"> ${eventDescription.toUpperCase()} </span></h1>
+    ).innerHTML = `<h1 style="color:red;">Time Left to: <span class="span" style="font-size:3rem;color:#fb8500"> ${eventDescription.toUpperCase()} </span></h1>
      <div id="countdownbox">
     <div class="box">${days}
     </div>
@@ -38,6 +38,7 @@ if (
 </div>
 <div><button class="reset"
 >Reset</button></div>
+
     
     `;
     document.querySelector(".countdown-item").style="display:flex;flex-direction:column;justify-content:space-around;align-items:center;"
