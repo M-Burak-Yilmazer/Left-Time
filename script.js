@@ -2,7 +2,7 @@ function startCountdown(event) {
 if (
   document.querySelector("#event1Description").value &&
   document.querySelector("#event1Date").value
-)
+){
   var eventDescription = document.getElementById(event + "Description").value;
   var eventDateInput = document.getElementById(event + "Date");
   var eventDate = new Date(eventDateInput.value).getTime();
@@ -21,7 +21,7 @@ if (
 
     document.querySelector(
       ".countdown-item"
-    ).innerHTML = `<h1 style="color:red;">Time Left to:  ${eventDescription.toUpperCase()}</h1>
+    ).innerHTML = `<h1 style="color:red;">Time Left to: <span class="span" style="font-size:3rem"> ${eventDescription.toUpperCase()} </span></h1>
      <div id="countdownbox">
     <div class="box">${days}
     </div>
@@ -40,6 +40,7 @@ if (
 >Reset</button></div>
     
     `;
+    document.querySelector(".countdown-item").style="display:flex;flex-direction:column;justify-content:space-around;align-items:center;"
     document.querySelector(".reset").addEventListener("click", ()=>{
       location.reload()
     })
@@ -60,5 +61,5 @@ if (
       document.getElementById(countdownId).innerHTML =
         eventDescription + " başladı!";
     }
-  }, 1000);
+  }, 1000);}else{alert("please enter a value")}
 }

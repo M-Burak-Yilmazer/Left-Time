@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #003049;
     color:white;
     margin: 0;
     display: flex;
@@ -91,4 +91,23 @@ button:hover {
 }
 .reset{
     margin-top:2rem;
+}
+
+@media (max-width:768px){
+    .countdown-container{
+        width:280px;height:450px;
+    }
+    input{
+        width:80%;
+    }
+     #countdownbox{
+flex-wrap: wrap;
+gap:1rem;
+     }
+    #countdownbox .box{
+        width: 60px;
+        height:60px;
+        
+    }
+
 }
