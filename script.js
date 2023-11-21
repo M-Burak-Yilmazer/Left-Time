@@ -71,6 +71,7 @@ function startCountdown(event) {
       title: "Invalid Value",
       text: "Please fill the all inputs ",
       icon: "error",
+      theme: "dark",
     });
   }
 }
