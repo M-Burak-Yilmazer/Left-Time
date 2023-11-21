@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Orbitron:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="countdown-container">
+      <div class="countdown-item">
+        <label for="event1Description">Activity</label>
+        <input type="text" id="event1Description" placeholder="Enter your Target " />
+        <label for="event1Date">Date</label>
+        <input type="datetime-local" id="event1Date" />
+        <button onclick="startCountdown('event1')">Başlat</button>
+        <div id="countdown1"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
