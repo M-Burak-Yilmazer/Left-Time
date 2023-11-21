@@ -1,4 +1,7 @@
 # ⏱️Left-Time Project
+
 The project I have made shows how much time you have until the date you have chosen.<br>
-
-
+<img src="Animation.gif"/>
+these are the screeshots of projects.
+<img src="FireShot Capture 003 - Countdown Timer - m-burak-yilmazer.github.io.png" />
+<img src="FireShot Capture 004 - Countdown Timer - m-burak-yilmazer.github.io.png" />
